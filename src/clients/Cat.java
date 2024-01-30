@@ -4,7 +4,6 @@ import java.time.LocalDate;
 
 public class Cat extends Animal {
 
-    //Todo напомнить в чём разница в double
     Double discount;
 
     public Cat(String nickName, Owner owner, LocalDate birthDate, Illness illness, Double discount) {
@@ -25,7 +24,6 @@ public class Cat extends Animal {
         this.discount = discount;
     }
 
-    //Todo статикой пользоваться аккуратно ( пароли там не хранить :-) )
     public static void meow(){
         System.out.println("Мяяяу!");
     }
