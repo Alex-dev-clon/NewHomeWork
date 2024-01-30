@@ -11,6 +11,13 @@ public class Main {
         Animal animal7 = new Fish();
         Animal animal8 = new Fish();
 
-        
+        animal1.fly();
+        animal2.fly();
+        animal3.fly();
+        animal4.fly();
+        animal5.fly();
+        animal6.fly();
+        animal7.fly();
+        animal8.fly();
     }
 }

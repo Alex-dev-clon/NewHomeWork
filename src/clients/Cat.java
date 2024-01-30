@@ -31,6 +31,11 @@ public class Cat extends Animal {
     }
 
     @Override
+    public void fly() {
+        System.out.println("Кошки не летают!");
+    }
+
+    @Override
     public String toString() {
         return super.toString()+"Discount("+discount+")";
     }
