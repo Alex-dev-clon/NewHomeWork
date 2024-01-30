@@ -7,7 +7,7 @@ public class Cat extends Animal {
     Double discount;
 
     public Cat(String nickName, Owner owner, LocalDate birthDate, Illness illness, Double discount) {
-        super(nickName, owner, birthDate, illness); //Todo сначала конструктор Супер-класса
+        super(nickName, owner, birthDate, illness);
         this.discount = discount;
     }
 
