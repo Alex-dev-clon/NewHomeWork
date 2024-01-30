@@ -19,5 +19,23 @@ public class Main {
         animal6.fly();
         animal7.fly();
         animal8.fly();
+        System.out.println();
+        animal1.toGo();
+        animal2.toGo();
+        animal3.toGo();
+        animal4.toGo();
+        animal5.toGo();
+        animal6.toGo();
+        animal7.toGo();
+        animal8.toGo();
+        System.out.println();
+        animal1.swim();
+        animal2.swim();
+        animal3.swim();
+        animal4.swim();
+        animal5.swim();
+        animal6.swim();
+        animal7.swim();
+        animal8.swim();
     }
 }
