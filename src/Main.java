@@ -21,10 +21,10 @@ public class Main {
         arrayPersonal.add(nurse1);
         arrayPersonal.add(nurse2);
 
-        Cat cat1 = new Cat("Кошка");
-        Dog dog1 = new Dog("Собака");
-        Duck duck1 = new Duck("Утка");
-        Fish fish1 = new Fish("Рыбка");
+        Cat cat1 = new Cat("Cat");
+        Dog dog1 = new Dog("Dog");
+        Duck duck1 = new Duck("Duck");
+        Fish fish1 = new Fish("Fish");
 
         arrayAnimals.add(cat1);
         arrayAnimals.add(dog1);
@@ -37,5 +37,6 @@ public class Main {
 
         VeterinaryClinic.showPersonal();
         VeterinaryClinic.cure(cat1);
+        VeterinaryClinic.cure(dog1, (Nurse) nurse1);
     }
 }
