@@ -21,10 +21,10 @@ public class Main {
         arrayPersonal.add(nurse1);
         arrayPersonal.add(nurse2);
 
-        Cat cat1 = new Cat("Кошка");
-        Dog dog1 = new Dog("Собака");
-        Duck duck1 = new Duck("Утка");
-        Fish fish1 = new Fish("Рыбка");
+        Cat cat1 = new Cat("РљРѕС€РєР°");
+        Dog dog1 = new Dog("РЎРѕР±Р°РєР°");
+        Duck duck1 = new Duck("РЈС‚РєР°");
+        Fish fish1 = new Fish("Р С‹Р±РєР°");
 
         arrayAnimals.add(cat1);
         arrayAnimals.add(dog1);

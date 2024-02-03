@@ -31,10 +31,10 @@ public class Doctor extends Personal {
     }
 
     public void cure (Animal animal, Nurse assistant) {
-        System.out.println("Врач: " + name + " лечит: " + animal.getNickName() + ", ассистент: " + assistant.getName());
+        System.out.println("Р’СЂР°С‡: " + name + " Р»РµС‡РёС‚: " + animal.getNickName() + ", Р°СЃСЃРёСЃС‚РµРЅС‚: " + assistant.getName());
     }
 
     public void cure (Animal animal){
-        System.out.println("Врач: " + name + " лечит: " + animal.getNickName() + " без ассистента");
+        System.out.println("Р’СЂР°С‡: " + name + " Р»РµС‡РёС‚: " + animal.getNickName() + " Р±РµР· Р°СЃСЃРёСЃС‚РµРЅС‚Р°");
     }
 }
