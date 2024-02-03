@@ -1,8 +1,11 @@
 package clients;
 
+import interfaces.Goable;
+import interfaces.Swimable;
+
 import java.time.LocalDate;
 
-public class Dog extends Animal {
+public class Dog extends Animal implements Goable, Swimable {
     public Dog(String nickName, Owner owner, LocalDate birthDate, Illness illness) {
         super(nickName, owner, birthDate, illness);
     }
@@ -11,8 +14,18 @@ public class Dog extends Animal {
         super();
     }
 
+    public Dog (String name) {
+        super(name);
+    }
     @Override
-    public void fly() {
-        System.out.println("Собаки не летают!");
+    public double run() {
+        System.out.println("Собака бежит со скоростью: ");
+        return 10.0;
+    }
+
+    @Override
+    public double swim() {
+        System.out.println("Собака плывёт со скоростью: ");
+        return 1.0;
     }
 }

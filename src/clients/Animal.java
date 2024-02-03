@@ -1,7 +1,9 @@
 package clients;
+import com.sun.tools.javac.Main;
+
 import java.time.LocalDate;
 
-public class Animal {
+public abstract class Animal {
 
     protected String nickName;
     protected Owner owner;
@@ -13,10 +15,14 @@ public class Animal {
         this.owner = owner;
         this.birthDate = birthDate;
         this.illness = illness;
+
     }
 
-    public Animal() {
-        this("Кличка", new Owner("Хозяин"), LocalDate.now(), new Illness("Болеет"));
+    public Animal(String name) {
+        this(name, new Owner("Хозяин"), LocalDate.now(), new Illness("Болеет"));
+    }
+    public Animal (){
+        this("Noname", new Owner("Хозяин"), LocalDate.now(), new Illness("Болеет"));
     }
 
     public String getNickName() {
@@ -70,19 +76,8 @@ public class Animal {
         System.out.println("Животное уснуло!");
     }
 
-    public void toGo(){
-        System.out.println("Животное идет!");
-    }
-
-    public void fly(){
-        System.out.println("Животное летит!");
-    }
-
-    public void swim(){
-        System.out.println("Животное плывет!");
-    }
     @Override
     public String toString() {
-        return String.format("nickName = %s, bd = %s, owner = %s, illness = %s", nickName, birthDate, owner, illness);
+        return String.format("nickName = %s, bd = %s, owner = %s, illness = %s \n", nickName, birthDate, owner, illness);
     }
 }

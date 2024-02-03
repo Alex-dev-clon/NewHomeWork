@@ -1,41 +1,40 @@
 import clients.*;
+import employee.Doctor;
+import employee.Nurse;
+import employee.Personal;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
-    public static void main(String[] args) {
-        Animal animal1 = new Cat();
-        Animal animal2 = new Cat();
-        Animal animal3 = new Dog();
-        Animal animal4 = new Dog();
-        Animal animal5 = new Duck();
-        Animal animal6 = new Duck();
-        Animal animal7 = new Fish();
-        Animal animal8 = new Fish();
+    public static List<Animal> arrayAnimals = new ArrayList<>();
+    public static List<Personal> arrayPersonal = new ArrayList<>();
 
-        animal1.fly();
-        animal2.fly();
-        animal3.fly();
-        animal4.fly();
-        animal5.fly();
-        animal6.fly();
-        animal7.fly();
-        animal8.fly();
-        System.out.println();
-        animal1.toGo();
-        animal2.toGo();
-        animal3.toGo();
-        animal4.toGo();
-        animal5.toGo();
-        animal6.toGo();
-        animal7.toGo();
-        animal8.toGo();
-        System.out.println();
-        animal1.swim();
-        animal2.swim();
-        animal3.swim();
-        animal4.swim();
-        animal5.swim();
-        animal6.swim();
-        animal7.swim();
-        animal8.swim();
+    public static void main(String[] args) {
+        Personal doctor1 = new Doctor("Bob");
+        Personal doctor2 = new Doctor("Greg");
+        Personal nurse1 = new Nurse("Lila");
+        Personal nurse2 = new Nurse("Mary");
+
+        arrayPersonal.add(doctor1);
+        arrayPersonal.add(doctor2);
+        arrayPersonal.add(nurse1);
+        arrayPersonal.add(nurse2);
+
+        Cat cat1 = new Cat("Кошка");
+        Dog dog1 = new Dog("Собака");
+        Duck duck1 = new Duck("Утка");
+        Fish fish1 = new Fish("Рыбка");
+
+        arrayAnimals.add(cat1);
+        arrayAnimals.add(dog1);
+        arrayAnimals.add(duck1);
+        arrayAnimals.add(fish1);
+
+        System.out.println(VeterinaryClinic.getGoable());
+        System.out.println(VeterinaryClinic.getFlyable());
+        System.out.println(VeterinaryClinic.getSwimable());
+
+        VeterinaryClinic.showPersonal();
     }
 }
