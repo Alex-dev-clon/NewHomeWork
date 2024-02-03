@@ -21,10 +21,10 @@ public class Main {
         arrayPersonal.add(nurse1);
         arrayPersonal.add(nurse2);
 
-        Cat cat1 = new Cat("–ö–æ—à–∫–∞");
-        Dog dog1 = new Dog("–°–æ–±–∞–∫–∞");
-        Duck duck1 = new Duck("–£—Ç–∫–∞");
-        Fish fish1 = new Fish("–†—ã–±–∫–∞");
+        Cat cat1 = new Cat(" Ó¯Í‡");
+        Dog dog1 = new Dog("—Ó·‡Í‡");
+        Duck duck1 = new Duck("”ÚÍ‡");
+        Fish fish1 = new Fish("–˚·Í‡");
 
         arrayAnimals.add(cat1);
         arrayAnimals.add(dog1);
@@ -36,5 +36,6 @@ public class Main {
         System.out.println(VeterinaryClinic.getSwimable());
 
         VeterinaryClinic.showPersonal();
+        VeterinaryClinic.cure(cat1);
     }
 }

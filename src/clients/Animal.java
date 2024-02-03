@@ -19,10 +19,10 @@ public abstract class Animal {
     }
 
     public Animal(String name) {
-        this(name, new Owner("РҐРѕР·СЏРёРЅ"), LocalDate.now(), new Illness("Р‘РѕР»РµРµС‚"));
+        this(name, new Owner("Хозяин"), LocalDate.now(), new Illness("Болеет"));
     }
     public Animal (){
-        this("Noname", new Owner("РҐРѕР·СЏРёРЅ"), LocalDate.now(), new Illness("Р‘РѕР»РµРµС‚"));
+        this("Noname", new Owner("Хозяин"), LocalDate.now(), new Illness("Болеет"));
     }
 
     public String getNickName() {
@@ -57,7 +57,7 @@ public abstract class Animal {
     }
 
     private void wakeUp(String time) {
-        System.out.println("Р–РёРІРѕС‚РЅРѕРµ " + nickName + " РїСЂРѕСЃРЅСѓР»РѕСЃСЊ РІ " + time);
+        System.out.println("Животное " + nickName + " проснулось в " + time);
     }
 
     public String getType() {
@@ -65,15 +65,15 @@ public abstract class Animal {
     }
 
     private void hunt() {
-        System.out.println("Р–РёРІРѕС‚РЅРѕРµ РѕС…РѕС‚РёС‚СЃСЏ!");
+        System.out.println("Животное охотится!");
     }
 
     private void eat() {
-        System.out.println("Р–РёРІРѕС‚РЅРѕРµ РµСЃС‚!");
+        System.out.println("Животное ест!");
     }
 
     private void sleep() {
-        System.out.println("Р–РёРІРѕС‚РЅРѕРµ СѓСЃРЅСѓР»Рѕ!");
+        System.out.println("Животное уснуло!");
     }
 
     @Override

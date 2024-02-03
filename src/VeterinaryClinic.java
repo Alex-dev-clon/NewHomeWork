@@ -1,4 +1,6 @@
 import clients.Animal;
+import employee.Doctor;
+import employee.Nurse;
 import employee.Personal;
 import interfaces.Flyable;
 import interfaces.Goable;
@@ -40,4 +42,18 @@ public class VeterinaryClinic {
         }
     }
 
+    public static void cure (Animal animal){
+        for (Personal personal : arrayPersonal){
+            if (personal instanceof Doctor) ((Doctor) personal).cure(animal);
+            break;
+        }
+    }
+    public static void cure (Animal animal, Nurse nurse){
+        for (Personal personal : arrayPersonal){
+            if (personal instanceof Doctor) {
+                ((Doctor) personal).cure(animal, nurse);
+                break;
+            }
+        }
+    }
 }

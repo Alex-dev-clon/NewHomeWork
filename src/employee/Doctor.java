@@ -1,5 +1,7 @@
 package employee;
 
+import clients.Animal;
+
 public class Doctor extends Personal {
     private String name;
     private final int id;
@@ -26,5 +28,13 @@ public class Doctor extends Personal {
     public void showInfo() {
         System.out.print("ID: " + getId() + " ");
         System.out.println("Name: " + getName());
+    }
+
+    public void cure (Animal animal, Nurse assistant) {
+        System.out.println("Врач: " + name + " лечит: " + animal.getNickName() + ", ассистент: " + assistant.getName());
+    }
+
+    public void cure (Animal animal){
+        System.out.println("Врач: " + name + " лечит: " + animal.getNickName() + " без ассистента");
     }
 }
