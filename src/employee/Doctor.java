@@ -26,8 +26,7 @@ public class Doctor extends Personal {
 
     @Override
     public void showInfo() {
-        System.out.print("ID: " + getId() + " ");
-        System.out.println("Name: " + getName());
+        System.out.print("Doctor " + name + ". ID: " + id);
     }
 
     public void cure (Animal animal, Nurse assistant) {

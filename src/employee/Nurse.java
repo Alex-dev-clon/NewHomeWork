@@ -24,8 +24,12 @@ public class Nurse extends Personal {
 
     @Override
     public void showInfo() {
-        System.out.print("ID: " + getId() + " ");
-        System.out.println("Name: " + getName());
+        System.out.print("Nurse " + name + ". ID: " + id);
+    }
+
+    @Override
+    public String toString() {
+        return "Doctor " + name + ". ID: " + id;
     }
 }
 

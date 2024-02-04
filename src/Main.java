@@ -7,36 +7,34 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Main {
-    public static List<Animal> arrayAnimals = new ArrayList<>();
-    public static List<Personal> arrayPersonal = new ArrayList<>();
-
     public static void main(String[] args) {
         Personal doctor1 = new Doctor("Bob");
         Personal doctor2 = new Doctor("Greg");
         Personal nurse1 = new Nurse("Lila");
         Personal nurse2 = new Nurse("Mary");
 
-        arrayPersonal.add(doctor1);
-        arrayPersonal.add(doctor2);
-        arrayPersonal.add(nurse1);
-        arrayPersonal.add(nurse2);
+        VeterinaryClinic.hirePersonal(doctor1);
+        VeterinaryClinic.hirePersonal(doctor2);
+        VeterinaryClinic.hirePersonal(nurse1);
+        VeterinaryClinic.hirePersonal(nurse2);
 
         Cat cat1 = new Cat("Cat");
         Dog dog1 = new Dog("Dog");
         Duck duck1 = new Duck("Duck");
         Fish fish1 = new Fish("Fish");
 
-        arrayAnimals.add(cat1);
-        arrayAnimals.add(dog1);
-        arrayAnimals.add(duck1);
-        arrayAnimals.add(fish1);
+        VeterinaryClinic.getAnimal(cat1);
+        VeterinaryClinic.getAnimal(dog1);
+        VeterinaryClinic.getAnimal(duck1);
+        VeterinaryClinic.getAnimal(fish1);
 
         System.out.println(VeterinaryClinic.getGoable());
         System.out.println(VeterinaryClinic.getFlyable());
         System.out.println(VeterinaryClinic.getSwimable());
 
         VeterinaryClinic.showPersonal();
-        VeterinaryClinic.cure(cat1);
-        VeterinaryClinic.cure(dog1, (Nurse) nurse1);
+        System.out.println();
+        VeterinaryClinic.firePersonal(nurse2);
+        VeterinaryClinic.showPersonal();
     }
 }
