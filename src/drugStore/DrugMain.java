@@ -35,22 +35,23 @@ public class DrugMain {
         showSortWeightPharmacies(pharmacies);
     }
 
-    static void showPharmacies (List <Pharmacy> pharmacies){
-        for (Pharmacy pharmacy : pharmacies){
+    static void showPharmacies(List<Pharmacy> pharmacies) {
+        for (Pharmacy pharmacy : pharmacies) {
             System.out.println(pharmacy);
         }
     }
 
-    static void showSortPharmacies (List <Pharmacy> pharmacies){
+    static void showSortPharmacies(List<Pharmacy> pharmacies) {
         Collections.sort(pharmacies);
-        for (Pharmacy pharmacy : pharmacies){
+        for (Pharmacy pharmacy : pharmacies) {
             System.out.println(pharmacy);
         }
     }
-/*
-Метод для сортировки лекарств по сумме веса компонентов
- */
-    static void showSortWeightPharmacies (List <Pharmacy> pharmacies){
+
+    /*
+    Метод для сортировки лекарств по сумме веса компонентов
+     */
+    static void showSortWeightPharmacies(List<Pharmacy> pharmacies) {
         Collections.sort(pharmacies, (o1, o2) -> {
             double weightSum1 = 0;
             double weightSum2 = 0;
@@ -62,7 +63,7 @@ public class DrugMain {
             }
             return Double.compare((weightSum1), (weightSum2));
         });
-        for (Pharmacy pharmacy : pharmacies){
+        for (Pharmacy pharmacy : pharmacies) {
             System.out.println(pharmacy);
         }
     }
