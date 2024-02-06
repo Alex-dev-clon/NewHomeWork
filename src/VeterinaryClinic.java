@@ -2,16 +2,16 @@ import clients.Animal;
 import employee.Doctor;
 import employee.Nurse;
 import employee.Personal;
-import interfaces.Flyable;
-import interfaces.Goable;
-import interfaces.Swimable;
+import animalInterfaces.Flyable;
+import animalInterfaces.Goable;
+import animalInterfaces.Swimable;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public abstract class VeterinaryClinic {
-    static List <Animal> arrayAnimals = new ArrayList<>();
-    static List <Personal> arrayPersonal = new ArrayList<>();
+    private static final List <Animal> arrayAnimals = new ArrayList<>();
+    private static final List <Personal> arrayPersonal = new ArrayList<>();
 
     static List <Goable> getGoable (){
         List <Goable> goableList = new ArrayList<>();

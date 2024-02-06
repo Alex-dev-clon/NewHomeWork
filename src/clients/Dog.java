@@ -1,7 +1,7 @@
 package clients;
 
-import interfaces.Goable;
-import interfaces.Swimable;
+import animalInterfaces.Goable;
+import animalInterfaces.Swimable;
 
 import java.time.LocalDate;
 

@@ -1,4 +1,4 @@
-package interfaces;
+package animalInterfaces;
 
 public interface Goable {
     double run ();
