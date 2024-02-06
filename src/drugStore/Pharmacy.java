@@ -28,8 +28,8 @@ public class Pharmacy implements Iterator<Component>, Comparable<Pharmacy> {
     }
 
     /*
-    В методе compareTo сравниваю объекты по делению суммы массы
-    на суммы силы всех компонентов внутри лекарства
+    В методе compareTo сравниваю объекты по результату деления суммы массы
+    на сумму силы всех компонентов внутри лекарства
      */
     @Override
     public int compareTo(Pharmacy o) {
